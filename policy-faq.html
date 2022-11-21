@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <title>Eco Shop - CHÍNH SÁCH VÀ CÂU HỎI THƯỜNG GẶP</title>
+</head>
+<body class="green">
+<!-- HEADER -->
+<div class="container main-header">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 logo">
+            <a href="index.html"><img alt="Eco Shop" src="images/logo.png"/></a>
+        </div>
+        <div class="col-xs-4 col-sm-12 col-md-5 col-lg-4 header-search-box">
+            <form class="form-inline">
+                <div class="form-group input-serach">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 group-button-header">
+            <a title="So sánh" href="#" class="btn-compare">So sánh</a>
+            <a title="Sản phẩm yêu thích" href="#" class="btn-heart">Yêu thích</a>
+
+            <div class="btn-cart" id="cart-block">
+                <a title="Đăng nhập" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MANIN HEADER -->
+<div id="nav-top-menu" class="nav-top-menu">
+    <div class="container">
+        <div class="row">
+
+            <div id="main-menu" class="col-sm-12 main-menu">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="#">MENU</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html"><span class="fa fa-home"></span> TRANG CHỦ</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle"
+                                       data-toggle="dropdown">SẢN PHẨM</a>
+                                    <ul class="dropdown-menu container-fluid">
+                                        <li class="block-container">
+                                            <ul class="block">
+                                                <li class="link_container"><a href="product-vegetables.html">RAU</a></li>
+                                                <li class="link_container"><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                                <li class="link_container"><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                                <li class="link_container"><a href="product-beans.html">ĐẬU</a></li>
+                                                <li class="link_container"><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                                <li class="link_container"><a href="product-spices.html">GIA VỊ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--<li><a href="#">Promotion</a></li>-->
+                                <li><a href="news.html">TIN TỨC</a></li>
+                                <li class="active"><a href="policy-faq.html">CHÍNH SÁCH & CÂU HỎI THƯỜNG GẶP</a></li>
+                                <li><a href="about-us.html">VỀ CHÚNG TÔI</a></li>
+                                <li><a href="contact-us.html">LIÊN HỆ CHÚNG TÔI</a></li>
+                            </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            <div id="shopping-cart-box-ontop">
+                <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+
+                <div class="shopping-cart-box-ontop-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+
+
+<!-- page wapper-->
+<div class="columns-container">
+    <div class="container" id="columns">
+        <!-- page heading-->
+        <h2 class="page-heading">
+            <span class="page-heading-title"><img alt="fashion" src="images/icon_books-stack-of-three.png"/> CHÍNH SÁCH </span>
+        </h2>
+        <!-- ../page heading-->
+        <div class="page-content page-order">
+            <div class="panel-group checkout-page accordion scrollable" id="checkout-page">
+                <!-- BEGIN PRIVATE POLICY -->
+                <div id="payment-address" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content1" class="accordion-toggle">
+                                <span class="fa fa-leaf"></span> Chính sách riêng tư
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content1" class="panel-collapse collapse in">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <div style="font-style: italic">
+                                    <p style="text-align: justify"> Chính sách bảo mật đưa ra giải thích về cách chúng tôi thu thập, sử dụng (trong một số trường hợp nhất định) và tiết lộ thông tin cá nhân của bạn. Ngoài ra, chính sách này cũng giải thích các bước chúng tôi thực hiện để bảo mật thông tin cá nhân của khách hàng. Cuối cùng, chính sách sẽ giải thích lựa chọn của bạn liên quan đến việc thu thập, sử dụng và tiết lộ thông tin cá nhân của bạn. Bảo vệ cá nhân và xứng đáng với niềm tin của bạn là tiêu chí cần thiết của chúng tôi. Do đó, chúng tôi sẽ sử dụng tên của bạn và các thông tin khác của bạn trong các quy định của chính sách bảo mật. Chúng tôi chỉ thu thập thông tin giao dịch cần thiết.<p>
+                                    <p style="text-align: justify"> Chúng tôi sẽ bảo mật thông tin của khách hàng theo quy định của pháp luật hoặc cho bất kỳ mục đích nào. Bạn có thể truy cập trang web của chúng tôi và duyệt mà không cần cung cấp thông tin cá nhân. Vào thời điểm đó, bạn đang ẩn danh và chúng tôi không biết bạn là ai nếu bạn không đăng nhập vào tài khoản của mình.<br></p>
+                                </div>
+                                <br>
+                                <h5 style="font-weight: bold; color: #43af50">1. Thu thập thông tin cá nhân </h5>
+                                <p style="text-align: justify"> Chúng tôi sẽ thu thập các thông tin khác khi bạn muốn đặt hàng trên website.</p>
+                                <p style="text-align: justify"> Chúng tôi thu thập, lưu trữ và xử lý thông tin của bạn cho quá trình mua và để thông báo cho tương lai, và để cung cấp dịch vụ. Chúng tôi sẽ không giới hạn thông tin cá nhân như chức danh, tên, giới tính, ngày sinh, địa chỉ email, địa chỉ giao hàng, số điện thoại, fax, chi tiết thanh toán, chi tiết thẻ thanh toán hoặc chi tiết tài khoản ngân hàng.</p>
+                                <p style="text-align: justify"> Chúng tôi sẽ sử dụng thông tin của bạn để xử lý đơn đặt hàng, cung cấp dịch vụ và thông tin yêu cầu thông qua trang web và theo yêu cầu của bạn. Hơn nữa, chúng tôi sẽ sử dụng thông tin của bạn để quản lý tài khoản của bạn; xác minh và thực hiện các giao dịch trực tuyến, kiểm soát dữ liệu nhập liệu từ web; để cải thiện bố cục và nội dung của trang web và điều chỉnh cho phù hợp với người dùng; để xác định người dùng web, thực hiện nghiên cứu nhân khẩu học, gửi chi tiết bao gồm thông tin sản phẩm và dịch vụ, nếu bạn không có ý định từ chối. Nếu bạn không muốn nhận bất kỳ thông tin tiếp thị nào từ chúng tôi, bạn có thể từ chối bất cứ lúc nào.</p>
+                                <p style="text-align: justify"> Chúng tôi có thể chuyển tên và địa chỉ của bạn cho bên thứ ba để giao hàng (ví dụ: người giao hàng hoặc nhà cung cấp).</p>
+                                <p style="text-align: justify"> Các khoản thanh toán trực tuyến sẽ được thực hiện bởi Mạng lưới đại lý quốc tế của chúng tôi. Bạn sẽ cung cấp cho chúng tôi hoặc các đại lý hoặc trang web thông tin chính xác và thông báo cho chúng tôi nếu có bất kỳ thay đổi nào.</p>
+                                <p style="text-align: justify"> Thông báo đơn đặt hàng của bạn sẽ được lưu trữ, nhưng vì lý do bảo mật, chúng tôi không tiết lộ trực tiếp. Tuy nhiên, bạn có thể truy cập thông tin bằng cách đăng nhập vào tài khoản của mình trên trang web. Bạn sẽ kiểm tra chi tiết đơn hàng của mình và thông tin email, ngân hàng và bản tin mà bạn đã đăng ký trong thời gian dài. Bạn phải cam kết bảo vệ dữ liệu cá nhân và không có quyền tiết lộ cho bên thứ ba. Chúng tôi không chịu bất kỳ trách nhiệm nào về việc sử dụng sai mật khẩu nếu đó không phải là lỗi của chúng tôi.</p>
+                                <h5 style="font-weight: bold; color: #43af50"> Các quy tắc khác về thông tin cá nhân</h5>
+                                <p style="text-align: justify"> Chúng tôi có quyền sử dụng thông tin cá nhân của bạn để thực hiện nghiên cứu thị trường, thông tin này sẽ được ẩn và chỉ được sử dụng cho mục đích thống kê. Bạn có thể từ chối tham gia bất cứ lúc nào. Mọi câu trả lời cho các cuộc khảo sát hoặc thăm dò ý kiến ​​sẽ không được chuyển cho bên thứ ba. Cần phải tiết lộ email của bạn nếu bạn muốn tham gia. Câu trả lời sẽ được lưu trữ riêng biệt với email của bạn.</p>
+                                <p style="text-align: justify"> Bạn sẽ nhận được thông tin từ trang web của chúng tôi, các trang web khác, sản phẩm, bán hàng, tin tức, bất cứ thứ gì liên quan đến các công ty của một nhóm hoặc giữa các đối tác kinh doanh. Nếu bạn từ chối nhận thông tin này, vui lòng nhấp vào liên kết trong bất kỳ email từ chối nào mà chúng tôi đã gửi cho bạn. Trong vòng 7 ngày kể từ khi nhận được chỉ dẫn của bạn, chúng tôi sẽ ngừng gửi thông tin. Nếu nó không rõ ràng, chúng tôi sẽ liên hệ với bạn.</p>
+                                <p style="text-align: justify">Chúng tôi sẽ tiếp tục ẩn dữ liệu người dùng trên trang web và sẽ sử dụng dữ liệu đó cho nhiều mục đích khác nhau, bao gồm việc xác định vị trí của người dùng và cách sử dụng các khía cạnh nhất định của trang web hoặc liên kết chứa email của người dùng và cung cấp dữ liệu ẩn danh cho bên thứ ba - nhà xuất bản . Tuy nhiên, dữ liệu này không thể xác định được các cá nhân.</p>
+                                <br>
+                                <h5 style="font-weight: bold; color: #43af50">2. Bảo mật</h5>
+                                <p style="text-align: justify"> Chúng tôi có các biện pháp thích hợp về bảo mật kỹ thuật để ngăn chặn truy cập trái phép, bất hợp pháp, mất mát hoặc hư hỏng thông tin của bạn. Khi thu thập dữ liệu trên web, chúng tôi thu thập thông tin cá nhân của bạn trên một máy chủ an toàn. Chúng tôi sử dụng tường lửa cho máy chủ. Khi thu thập thông tin chi tiết của thẻ thanh toán điện tử, chúng tôi sử dụng mã hóa Lớp cổng bảo mật (SSL). Khi chúng ta không thể đảm bảo 100% tính bảo mật, SSL sẽ gây khó khăn cho hacker trong việc giải mã thông tin của bạn. Bạn không nên gửi đầy đủ thông tin chi tiết về thẻ tín dụng hoặc thẻ ghi nợ của mình khi chúng chưa được mã hóa cho chúng tôi. Chúng tôi duy trì các biện pháp bảo vệ vật lý và các liên kết điện tử đối với việc thu thập, lưu trữ và tiết lộ thông tin cá nhân của bạn. Quy trình an toàn của chúng tôi có nghĩa là đôi khi chúng tôi có thể yêu cầu bằng chứng trước khi tiết lộ thông tin cá nhân cho bạn.</p>
+                                <p style="text-align: justify">Chúng tôi khuyên bạn không nên cung cấp thông tin chi tiết về các khoản thanh toán cho bất kỳ ai qua e-mail, chúng tôi không chịu trách nhiệm về những tổn thất mà bạn có thể phải chịu trong quá trình trao đổi thông tin trên Internet hoặc email của bạn.</p>
+                                <p style="text-align: justify">Bạn tuyệt đối không sử dụng bất kỳ chương trình, công cụ hay bất kỳ hình thức nào khác để can thiệp vào hệ thống hoặc làm thay đổi cấu trúc dữ liệu. Nghiêm cấm phát tán, tuyên truyền, cổ vũ bất kỳ hoạt động nào nhằm can thiệp, phá hoại, xâm nhập vào dữ liệu hệ thống website. Mọi vi phạm sẽ bị tước bỏ mọi quyền lợi và sẽ bị truy tố trước pháp luật nếu cần thiết.</p>
+                                <p style="text-align: justify">Mọi thông tin giao dịch sẽ được bảo mật nhưng trong trường hợp pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật.</p>
+                                <p style="text-align: justify">Các điều kiện, điều khoản và nội dung của trang web này được điều chỉnh bởi luật pháp Việt Nam và tòa án Việt Nam có thẩm quyền xét xử.</p>
+                                <br>
+                                <h5 style="font-weight: bold; color: #43af50">3. Lợi ích của Khách hàng </h5>
+                                <p style="text-align: justify">Bạn có quyền truy cập vào dữ liệu cá nhân của mình, để yêu cầu chúng tôi sửa các lỗi trong dữ liệu của bạn mà không tính phí. Bạn có quyền yêu cầu chúng tôi ngừng sử dụng dữ liệu cá nhân của bạn cho các mục đích tiếp thị.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRIVATE POLICY -->
+
+                <!-- BEGIN PAYMENT POLICY -->
+                <div id="payment-address" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content2" class="accordion-toggle">
+                                <span class="fa fa-leaf"></span> Chính sách thanh toán
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content2" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <p style="text-align: justify">Tất cả các giao dịch của bạn trên Lazada.vn bằng thẻ tín dụng quốc tế sẽ được bảo mật bằng mã hóa (vui lòng tìm hiểu thêm bằng cách tham khảo điều khoản "Quy định về Bảo mật" của chúng tôi ở trên). Theo đó, bạn phải lưu ý các chi tiết sau đây để thanh toán trực tuyến.</p>
+                                <p style="text-align: justify">1.Chỉ sử dụng trang web này với các khoản thanh toán an toàn</p>
+                                <p style="text-align: justify">2. Không cho người khác mượn thẻ tín dụng hoặc tài khoản của bạn để thanh toán trên Lazada.vn; Trong trường hợp phát sinh giao dịch đột xuất, Quý khách vui lòng thông báo để chúng tôi hỗ trợ kịp thời.</p>
+                                <p style="text-align: justify">3. Kiểm tra tài khoản ngân hàng của bạn thường xuyên để đảm bảo rằng tất cả các giao dịch bằng thẻ tín dụng đều được kiểm soát.</p>
+                                <p style="text-align: justify">4.Trong một số trường hợp giao dịch bất thường hoặc khối lượng đặt hàng lớn, Echo Shop sẽ yêu cầu bạn cung cấp thẻ tín dụng và giấy tờ tùy thân để biện minh cho tính chính xác và chân thành của giao dịch. Khi bạn nhận được yêu cầu này, vui lòng ẩn CVV ở mặt sau thẻ của bạn để bảo mật thông tin.</p>
+                            </div>
+                            <!--<hr>-->
+                            <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<button class="button  pull-left" type="submit" data-toggle="collapse" data-parent="#checkout-page" data-target="#payment-method-content" id="button-payment-address">Continue</button>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END PAYMENT POLICY -->
+
+                <!-- BEGIN RETURN & CHANGE POLICY -->
+                <div id="return-change-pilicy" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content3" class="accordion-toggle">
+                                <span class="fa fa-leaf"></span> Chính sách Trả hàng & Thay đổi
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content3" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <p style="text-align: justify">Eco Shop đảm bảo rằng tất cả các sản phẩm đã mua đều là hàng chính hãng, mới tinh và không bị lỗi. Sản phẩm bạn nhận được không bị hư hỏng, hoạt động tốt và khớp với mô tả sản phẩm trên trang web của Eco Shop.</p>
+                                <p style="text-align: justify">Nếu sản phẩm nhận được không đúng điều kiện như mô tả ở trên, vui lòng thông báo cho chúng tôi trong vòng 4 giờ kể từ khi bạn nhận được hàng. Eco Shop có quyền từ chối mọi hỗ trợ nếu khách hàng không thông báo cho chúng tôi trong thời hạn thông báo đã nêu.</p>
+                                <p style="text-align: justify">Hàng trả lại phải được gửi đến Eco Shop để kiểm tra chất lượng. Chúng tôi sẽ thay thế nó bằng một cái mới hoặc hoàn lại giá đã thanh toán của mặt hàng trả lại.</p>
+                            </div>
+                            <!--<hr>-->
+                            <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<button class="button  pull-left" type="submit" data-toggle="collapse" data-parent="#checkout-page" data-target="#payment-method-content" id="button-payment-address">Continue</button>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END RETURN & CHANGE POLICY -->
+
+
+                <!-- BEGIN VOUCHER POLICY -->
+                <div id="payment-address" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content4" class="accordion-toggle">
+                                <span class="fa fa-leaf"></span> Chính sách phiếu thưởng
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content4" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <p style="text-align: justify">1.Các điều khoản và điều kiện (T & C) sau đây áp dụng cho việc bạn sử dụng và đổi các phiếu thưởng khuyến mại hoặc mã phiếu thưởng, trong đó các phiếu thưởng đó được cung cấp không cần cân nhắc.</p>
+                                <p style="text-align: justify">2.Phiếu mua hàng chỉ có giá trị trên trang web của Eco Shop.</p>
+                                <p style="text-align: justify">3.Để sử dụng voucher, bạn phải nhập mã voucher tại trang thanh toán.</p>
+                                <p style="text-align: justify">4.Khách hàng chỉ được phép đổi một voucher mỗi ngày.</p>
+                                <p style="text-align: justify">5.Mỗi mã voucher chỉ được sử dụng một lần cho mỗi khách hàng.</p>
+                                <p style="text-align: justify">6.Các điều khoản và điều kiện bổ sung có thể được chỉ định liên quan đến mã phiếu thưởng cụ thể (ví dụ: thời hạn, số tiền chiết khấu và các sản phẩm được bảo hiểm), và sẽ chi phối việc sử dụng và quy đổi các phiếu thưởng đó.</p>
+                                <p style="text-align: justify">7.Phiếu không có giá trị quy đổi thành tiền mặt.</p>
+                                <p style="text-align: justify">8.Eco Shop có quyền thay đổi các điều khoản & điều kiện này hoặc hủy bỏ bất kỳ chương trình khuyến mãi nào vào bất kỳ lúc nào mà không cần thông báo.</p>
+
+                            </div>
+                            <!--<hr>-->
+                            <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<button class="button  pull-left" type="submit" data-toggle="collapse" data-parent="#checkout-page" data-target="#payment-method-content" id="button-payment-address">Continue</button>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END VOUCHER POLICY -->
+
+                <!-- BEGIN TERM & CONDITION -->
+                <div id="payment-address" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content5" class="accordion-toggle">
+                                <span class="fa fa-leaf"></span> Điều khoản và điều kiện
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content5" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <div style="font-style: italic">
+                                    <p style="text-align: justify"> Khi bạn truy cập trang web của chúng tôi, điều đó có nghĩa là bạn đã đồng ý với các điều khoản này. <p>
+                                    <p style="text-align: justify"> Hãy thường xuyên kiểm tra các bản cập nhật của chúng tôi.<br></p>
+                                </div>
+                                <br>
+                                <p style="text-align: justify"> Khi bạn sử dụng trang web của chúng tôi, bạn từ 18 tuổi trở lên hoặc bạn truy cập dưới sự giám sát của cha mẹ bạn hoặc của người giám hộ hợp pháp.</p>
+                                <p style="text-align: justify"> Chúng tôi đã cấp giấy phép mua sắm trực tuyến trên trang web này trong chính sách Điều khoản và Điều kiện.</p>
+                                <p style="text-align: justify"> Bất kỳ phần nào của trang web được sử dụng với mục đích thương mại hoặc bất kỳ ẩn danh nào từ bên thứ ba nếu không có sự cho phép bằng văn bản của chúng tôi, sẽ bị nghiêm cấm.</p>
+                                <p style="text-align: justify"> Trang web được sử dụng để cung cấp thông tin sản phẩm không liên quan đến bất kỳ nhà cung cấp nào. Theo đó, những bình luận hay nhận xét trên website là ý kiến của khách hàng, không phải của chúng tôi.</p>
+                                <p style="text-align: justify"> Bạn phải đăng ký tài khoản trên website để xác minh thông tin cá nhân và cập nhật thường xuyên nếu có bất kỳ thay đổi nào. Mỗi người dùng phải tự chịu trách nhiệm về mật khẩu, tài khoản và các hoạt động của mình trên trang web. Ngoài ra, bạn phải thông báo cho chúng tôi về các tài khoản bất hợp pháp. Chúng tôi không trực tiếp hoặc gián tiếp chịu trách nhiệm về bất kỳ thiệt hại hoặc mất mát nào nếu bạn không tuân thủ các quy định của chúng tôi.</p>
+                                <p style="text-align: justify"> Trong quá trình đăng ký, bạn sẽ nhận được email quảng cáo từ trang web. Sau đó, nếu không muốn nhận nữa, bạn có thể từ chối bằng cách nhấp vào liên kết dưới cùng trong tất cả các email quảng cáo. Trong quá trình đăng ký, bạn sẽ nhận được email quảng cáo từ trang web. Sau đó, nếu bạn không muốn nhận chúng nữa, bạn có thể từ chối bằng cách nhấp vào liên kết dưới cùng trong tất cả các quảng cáo email.</p>
+                                <p style="text-align: justify"> Tất cả các Điều khoản và Điều kiện và Hợp đồng (và tất cả các nghĩa vụ phát sinh ngoài hợp đồng hoặc liên quan đến) sẽ được điều chỉnh và hiểu theo luật pháp Việt Nam. Nếu có bất kỳ tranh chấp nào phát sinh từ Điều khoản sử dụng, bạn có thể gửi khiếu nại đến tòa án tại Việt Nam để giải quyết.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TERMS & CONDITIONS -->
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ./page wapper-->
+
+<!-- page wapper-->
+<div class="columns-container">
+    <div class="container" id="columns">
+        <!-- page heading-->
+        <h2 class="page-heading">
+            <span class="page-heading-title"><img alt="fashion" src="images/icon_magnifier-and-mark-help.png"/> CÂU HỎI THƯỜNG GẶP</span>
+        </h2>
+        <!-- ../page heading-->
+        <div class="page-content page-order">
+            <div class="panel-group checkout-page accordion scrollable" id="checkout-page">
+
+
+                <!-- BEGIN HOW TO BUY -->
+                <div id="payment-address1" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content6" class="accordion-toggle">
+                                <span class="fa fa-question-circle"></span> Mua thế nào?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content6" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <h5 style="font-weight: bold; color: #43af50">1. Cách đặt hàng trực tuyến </h5>
+                                <p style="text-align: justify">Đặt hàng tại Greenfarm thật dễ dàng:</p>
+                                <p><img src="images/policy/new-order-image.jpg" alt="" width="90%" /></p>
+                                <br>
+                                <h5 style="font-weight: bold; color: #43af50">2. Cách đặt một cái khác qua điện thoại </h5>
+                                <p style="text-align: justify">Chúng tôi có thể hỗ trợ bạn đặt hàng qua điện thoại. Hãy liên hệ với chúng tôi qua hotline: 0353.228.084</p>
+                                <p style="text-align: justify">Tuy nhiên, chúng tôi khuyên bạn nên xem cách mua hàng trực tuyến.</p>
+                                <br>
+                                <h5 style="font-weight: bold; color: #43af50">3. Xác nhận sau khi đặt hàng</h5>
+                                <p style="text-align: justify">Khi bạn đặt hàng trên GreenFarm, bạn sẽ nhận được thông báo qua SMS và email kèm theo mã số đơn hàng để xác nhận rằng GreenFarm đã nhận được yêu cầu đặt hàng của bạn.</p>
+                                <p style="text-align: justify">Trong trường hợp GreenFarm cần xác nhận của bạn để tiếp tục quá trình đặt hàng, Đại lý hỗ trợ khách hàng của chúng tôi có thể liên hệ với bạn qua điện thoại hoặc gửi cuộc gọi tự động hoặc SMS 2 chiều từ trang web của GreenFarm. Một cuộc gọi xác nhận tự động sẽ được thực hiện 3 lần, nếu sau 3 lần mà GreenFarm chưa nhận được xác nhận của quý khách, chúng tôi có thể tiến hành gửi tin nhắn yêu cầu xác nhận lại đơn hàng. Vui lòng làm theo hướng dẫn và gửi xác nhận của bạn bằng cách trả lời đến 8055. Phí xác nhận SMS là 500 VND. Nếu GreenFarm vẫn chưa nhận được thông tin từ bạn theo khoảng thời gian đã nêu trong tin nhắn, chúng tôi rất tiếc phải hủy đơn hàng.</p>
+                                <p style="text-align: justify">Trạng thái đơn hàng của bạn sẽ được cập nhật qua email và thông báo SMS.</p>
+                                <br>
+                            </div>
+                            <!--<hr>-->
+                            <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<button class="button  pull-left" type="submit" data-toggle="collapse" data-parent="#checkout-page" data-target="#payment-method-content" id="button-payment-address">Continue</button>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END HOW TO BUY -->
+
+                <!-- HOW TO PAYMENT -->
+                <div id="payment-address" class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#policy-page" href="#payment-address-content7" class="accordion-toggle">
+                                <span class="fa fa-question-circle"></span> Có những phương thức thanh toán nào?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="payment-address-content7" class="panel-collapse collapse">
+                        <div class="panel-body row">
+                            <div class="col-md-12 col-sm-12" id="content-container">
+                                <p style="text-align: justify"> Để mang đến cho bạn trải nghiệm mua sắm trực tuyến tốt nhất, chúng tôi cung cấp nhiều phương thức thanh toán:</p>
+                                <p style="text-align: justify"> 1. Thu tiền khi giao hàng (COD) </p>
+                                <p style="text-align: justify"> 2. Thẻ tín dụng / thẻ ghi nợ</p>
+                                <p style="text-align: justify"> 3. Thẻ ATM</p>
+                            </div>
+                            <!--<hr>-->
+                            <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<button class="button  pull-left" type="submit" data-toggle="collapse" data-parent="#checkout-page" data-target="#payment-method-content" id="button-payment-address">Continue</button>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- END HOW TO PAYMENT -->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ./page wapper-->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- introduce-box -->
+            <div id="introduce-box" class="row">
+                <div class="col-md-3">
+                    <div id="address-box">
+                        <a href="#"><img src="images/logo.png" alt="logo"/></a>
+    
+                        <div id="address-list">
+                            <div class="tit-name">Địa chỉ:</div>
+                            <div class="tit-contain">255 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận
+                            </div>
+                            <div class="tit-name">Điện thoại:</div>
+                            <div class="tit-contain">(+84) 353.228.084</div>
+                            <div class="tit-name">Email:</div>
+                            <div class="tit-contain">ecoshop@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="introduce-title">CHĂM SÓC KHÁCH HÀNG</div>
+                            <ul id="introduce-support" class="introduce-list">
+                                <li> Thứ Hai - Thứ Sáu: 7:00 - 21:00</li>
+                                <li>Thứ Bảy: 7:00 - 19:00</li>
+                                <li><a href="policy-faq.html">Mua thế nào</a></li>
+                                <li><a href="policy-faq.html">Cách thanh toán</a></li>
+                                <li><a href="policy-faq.html">Câu hỏi thường gặp</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="introduce-title">CHÍNH SÁCH</div>
+                            <ul id="introduce-Account" class="introduce-list">
+                                <li><a href="policy-faq.html">Chính sách bảo mật</a></li>
+                                <li><a href="policy-faq.html">Chính sách thanh toán</a></li>
+                                <li><a href="policy-faq.html">Chính sách Trả hàng & Thay đổi</a></li>
+                                <li><a href="policy-faq.html">Điều khoản & điều kiện</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div id="contact-box">
+                        <div class="introduce-title">ĐĂNG KÝ NHẬN BẢN TIN CỦA ECO SHOP</div>
+                        <div class="input-group" id="mail-box">
+                            <input type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Gửi</button>
+                              </span>
+                        </div><!-- /input-group -->
+                        <div class="introduce-title">THEO DÕI CHÚNG TÔI</div>
+                        <!--<div class="social-link">-->
+                        <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                        <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+                        <!--</div>-->
+                        <div class="social-link">
+                            <ul class="social-icons">
+                                <li><a class="rss" data-original-title="rss" href="#"></a></li>
+                                <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                                <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                                <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                                <li><a class="linkedin" data-original-title="linkedin" href="#"></a></li>
+                                <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                                <li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+                                <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div><!-- /#introduce-box -->
+    
+    
+            <div id="footer-menu-box">
+                <p class="text-center">Copyrights &#169; 2022 Eco Shop. All Rights Reserved. Design by Nguyen Quang Man</p>
+            </div><!-- /#footer-menu-box -->
+        </div>
+    </footer>
+
+    <a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+    <!-- Script-->
+
+    <script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/jquery.actual.min.js"></script>
+    <script type="text/javascript" src="js/theme-script.js"></script>
+    <script type="text/javascript" src="js/shoppingCart.js"></script>
+
+    <script type="text/javascript" src="js/layout.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            Layout.init();
+            Layout.initOWL();
+            Layout.initTwitter();
+            Layout.initImageZoom();
+            Layout.initTouchspin();
+            Layout.initUniform();
+            Layout.initSliderRange();
+        });
+    </script>
+</body>
+
+</html>

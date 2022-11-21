@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <title>Eco Shop - TIN TỨC</title>
+</head>
+<body class="green">
+<!-- HEADER -->
+<div id="header" class="header">
+
+    <!-- MAIN HEADER -->
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 logo">
+                <a href="index.html"><img alt="Eco Shop" src="images/logo.png"/></a>
+            </div>
+            <div class="col-xs-4 col-sm-12 col-md-5 col-lg-4 header-search-box">
+                <form class="form-inline">
+                    <div class="form-group input-serach">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 group-button-header">
+                <a title="So sánh" href="#" class="btn-compare">So sánh</a>
+                <a title="Sản phẩm yêu thích" href="#" class="btn-heart">Yêu thích</a>
+
+                <div class="btn-cart" id="cart-block">
+                    <a title="Đăng nhập" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MANIN HEADER -->
+    <div id="nav-top-menu" class="nav-top-menu">
+        <div class="container">
+            <div class="row">
+
+                <div id="main-menu" class="col-sm-12 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html"><span class="fa fa-home"></span> TRANG CHỦ</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle"
+                                           data-toggle="dropdown">SẢN PHẨM</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"><a href="product-vegetables.html">RAU</a></li>
+                                                    <li class="link_container"><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                                    <li class="link_container"><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                                    <li class="link_container"><a href="product-beans.html">ĐẬU</a></li>
+                                                    <li class="link_container"><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                                    <li class="link_container"><a href="product-spices.html">GIA VỊ</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--<li><a href="#">Promotion</a></li>-->
+                                    <li class="active"><a href="news.html">TIN TỨC</a></li>
+                                    <li><a href="policy-faq.html">CHÍNH SÁCH & CÂU HỎI THƯỜNG GẶP</a></li>
+                                    <li><a href="about-us.html">VỀ CHÚNG TÔI</a></li>
+                                    <li><a href="contact-us.html">LIÊN HỆ CHÚNG TÔI</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            <div id="shopping-cart-box-ontop">
+                <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+
+                <div class="shopping-cart-box-ontop-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+
+
+<div class="columns-container">
+    <div class="container" id="columns">
+        <!-- row -->
+        <div class="row">
+            <!-- Left colunm -->
+            <div class="column col-xs-12 col-sm-3" id="left_column">
+                <!-- block category -->
+                <div class="block left-module">
+                    <p class="title_block"><span class="fa fa-list"></span> Thể loại</p>
+
+                    <div class="block_content">
+                        <!-- layered -->
+                        <div class="layered layered-category">
+                            <div class="layered-content">
+                                <ul class="tree-menu">
+                                    <li class="active">
+                                        <span></span><a href="#">Sức khỏe</a>
+
+                                    </li>
+                                    <li><span></span><a href="#">Món ăn</a></li>
+                                    <li><span></span><a href="#">Khoa học & Công nghệ</a></li>
+                                    <li><span></span><a href="#">Nông nghiệp</a></li>
+                                    <li><span></span><a href="#">Việc kinh doanh</a></li>
+                                    <li><span></span><a href="#">Đời sống</a></li>
+                                    <li><span></span><a href="#">Giải trí</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ./layered -->
+                    </div>
+                </div>
+                <!-- ./block category  -->
+                <!-- block video -->
+                <div class="block left-module">
+                    <p class="title_block"><span class="fa fa-video-camera"></span>  VIDEOS</p>
+
+                    <div class="block_content">
+                        <iframe width="255" height="300" src="https://www.youtube.com/embed/oFuC0URYKqU" frameborder="0"
+                                allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <!-- ./block video  -->
+
+                <!-- block image -->
+                <div class="block left-module">
+                   <p class="title_block"><span class="fa fa-camera"></span>  Hình ảnh</p>
+                    <div class="block_content">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="box-right">
+                                    <ul class="product-list">
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                        src="images/news/news1_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news1.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product"style="border-radius: 15%"
+                                                        src="images/news/news2_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news2.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product"
+                                                        src="images/news/news3_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news3.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                        src="images/news/news4_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news4.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                        src="images/news/news5_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news5.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-6">
+                                            <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                                <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                        src="images/news/news6_300x300.jpg"/></a>
+                                                <div class="quick-view quick-view-2">
+                                                    <a title="Zoom In" href="images/news/news6.jpg" class="search fancybox-button"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./block image  -->
+            </div>
+
+            <!-- ./left colunm -->
+            <!-- Center colunm-->
+            <div class="center_column col-xs-12 col-sm-9" id="center_column">
+                <!-- page heading-->
+                <h2 class="page-heading">
+                    <span class="page-heading-title"><span class="fa fa-newspaper-o"></span> TIN TỨC</span>
+                </h2>
+                <!-- ../page heading-->
+                <ul class="blog-posts">
+                    <li class="post-item">
+                        <article class="entry">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="entry-thumb image-hover2">
+                                        <a>
+                                            <img src="images/news/news7_300x300.jpg" alt="News">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="entry-ci">
+                                        <h3 class="entry-title"><a href="how-coconut-oil-may-rescue.html">Dầu dừa có thể cứu não khỏi bệnh Alzheimer như thế nào </a></h3>
+
+                                        <div class="entry-meta-data">
+                                            <span class="author">
+                                            <i class="fa fa-user"></i>
+                                            bởi: <a href="#"> Sayer Ji</a></span>
+                                            <span class="date"><i class="fa fa-calendar"></i> Ngày 03 tháng 09 </span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Internet yêu thích một câu chuyện phục hồi "cách chữa bệnh tự nhiên" tốt. Ví dụ, khi Tiến sĩ Mary Newport, MD, đảo ngược đáng kể các triệu chứng bệnh Alzheimer của chồng cô sau khi ...
+                                        </div>
+                                        <div class="entry-more">
+                                            <a href="how-coconut-oil-may-rescue.html">Đọc thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="post-item">
+                        <article class="entry">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="entry-thumb image-hover2">
+                                        <a>
+                                            <img src="images/news/news9_300x300.jpg" alt="News">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="entry-ci">
+                                        <h3 class="entry-title"><a href="here-are-your-iron-sources.html">Ăn chay? Đây là nguồn sắt của bạn</a></h3>
+
+                                        <div class="entry-meta-data">
+                                            <span class="author">
+                                            <i class="fa fa-user"></i>
+                                            bởi: <a href="#"> Melissa Breyer</a></span>
+                                            <span class="date"><i class="fa fa-calendar"></i> Ngày 10 tháng 12</span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Có rất nhiều điều để nói về việc theo một chế độ ăn thuần chay hoặc ăn chay; thừa sắt thường không phải là một trong số đó, đặc biệt là ...
+                                        </div>
+                                        <div class="entry-more">
+                                            <a href="here-are-your-iron-sources.html">Đọc thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="post-item">
+                        <article class="entry">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="entry-thumb image-hover2">
+                                        <a>
+                                            <img src="images/news/news8_300x300.jpg" alt="News">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="entry-ci">
+                                        <h3 class="entry-title"><a href="relaxing-yoga-poses.html">7 tư thế yoga thư giãn cho mệt mỏi thượng thận</a></h3>
+
+                                        <div class="entry-meta-data">
+                                            <span class="author">
+                                            <i class="fa fa-user"></i>
+                                            bởi: <a href="#"> Michael Kanter</a></span>
+                                            <span class="date"><i class="fa fa-calendar"></i> Ngày 1 tháng 9</span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Một câu hỏi phổ biến mà tôi được hỏi bởi các sinh viên của mình là, "Làm thế nào để tôi có thể trở nên ít căng thẳng hơn và có nhiều năng lượng hơn, mà không làm giảm động lực và tham vọng thành công của tôi?" ...
+                                        </div>
+                                        <div class="entry-more">
+                                            <a href="relaxing-yoga-poses.html">Đọc thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="post-item">
+                        <article class="entry">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="entry-thumb image-hover2">
+                                        <a>
+                                            <img src="images/news/news10_300x300.jpg" alt="News">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="entry-ci">
+                                        <h3 class="entry-title"><a href="chinese-herb-for-cough.html">Nhân quả mơ: Loại thảo mộc trị ho và nguồn vitamin gây tranh cãi của Trung Quốc</a></h3>
+
+                                        <div class="entry-meta-data">
+                                            <span class="author">
+                                            <i class="fa fa-user"></i>
+                                            bởi: <a href="#"> Conan Milner,</a></span>
+                                            <span class="comment-count">
+                                                <i class="fa fa-comment-o"></i> 33
+                                            </span>
+                                            <span class="date"><i class="fa fa-calendar"></i> Ngày 13 tháng 7</span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Hãy mở một hố mơ và bạn sẽ tìm thấy một hạt trông, có mùi và vị rất giống quả hạnh. Hạt mơ được dùng để ...
+                                        </div>
+                                        <div class="entry-more">
+                                            <a href="chinese-herb-for-cough.html">Đọc thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+                <div class="sortPagiBar">
+                    <div class="bottom-pagination">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Tiếp theo">
+                                        <span aria-hidden="true">Tiếp theo &raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ Center colunm -->
+        </div>
+        <!-- ./row-->
+    </div>
+</div>
+
+<!-- POPUP LOGIN-REGISTER -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">ĐĂNG NHẬP/ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Đăng nhập</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Đăng ký</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- LOGIN -->
+                            <div class="tab-pane active" id="Login">
+                                <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                      id="dangnhap_from" method="post">
+                                    <div class="form-group">
+                                        <label for="email_login" class="col-sm-3 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="email" class="input form-control" id="email_login"
+                                                   placeholder="Tên đăng nhập...."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass_login" class="col-sm-3 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="password" class="input form-control" id="pass_login"
+                                                   placeholder="Mật khẩu...."/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <button class="button" type="submit" id="button-confirm">Đăng nhập</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- REGISTER -->
+                            <div class="tab-pane fade" id="Registration">
+                                <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                      enctype="multipart/form-data" id="dangkytk_form register">
+                                    <div class="form-group">
+                                        <label for="frm_name" class="col-sm-4 control-label">Họ Tên</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" class="input form-control" id="frm_name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailtk" class="col-sm-4 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" class="input form-control" id="emailtk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass_tk" class="col-sm-4 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="pass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="repass_tk" class="col-sm-4 control-label">Nhập lại mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="repass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ngaysinh_tk" class="col-sm-4 control-label">Ngày sinh</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="gender_tk" class="col-sm-4 control-label">Giới tính</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                <option value="1">Nữ</option>
+                                                <option value="0">Nam</option>
+                                                <option value="0">Khác</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="diachi" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="dienthoai" class="col-sm-4 control-label">Số điện thoại</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="dienthoai" class="input form-control"
+                                                   id="dienthoai_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button class="button" type="submit">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="OR" class="hidden-xs">OR</div>
+                    </div>
+
+                    <!-- Facebook - Google account -->
+                    <div class="col-md-5">
+                        <div class="row text-center sign-with">
+                            <div class="social-header">Đăng nhập với</div>
+                            <div class="unit social-column">
+                                <div class="social-inner">
+                                    <div><a href=""><img src="images/fb-login-button-big.png" alt="login-facebook"></a>
+                                    </div>
+                                    <div><a href=""><img src="images/gg-login-button-big.png" alt="login-google"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EN LOGIN REGISTER-->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <!-- introduce-box -->
+        <div id="introduce-box" class="row">
+            <div class="col-md-3">
+                <div id="address-box">
+                    <a href="#"><img src="images/logo.png" alt="logo"/></a>
+
+                    <div id="address-list">
+                        <div class="tit-name">Địa chỉ:</div>
+                        <div class="tit-contain">255 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận
+                        </div>
+                        <div class="tit-name">Điện thoại:</div>
+                        <div class="tit-contain">(+84) 353.228.084</div>
+                        <div class="tit-name">Email:</div>
+                        <div class="tit-contain">ecoshop@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHĂM SÓC KHÁCH HÀNG</div>
+                        <ul id="introduce-support" class="introduce-list">
+                            <li> Thứ Hai - Thứ Sáu: 7:00 - 21:00</li>
+                            <li>Thứ Bảy: 7:00 - 19:00</li>
+                            <li><a href="policy-faq.html">Mua thế nào</a></li>
+                            <li><a href="policy-faq.html">Cách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHÍNH SÁCH</div>
+                        <ul id="introduce-Account" class="introduce-list">
+                            <li><a href="policy-faq.html">Chính sách bảo mật</a></li>
+                            <li><a href="policy-faq.html">Chính sách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Chính sách Trả hàng & Thay đổi</a></li>
+                            <li><a href="policy-faq.html">Điều khoản & điều kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="contact-box">
+                    <div class="introduce-title">ĐĂNG KÝ NHẬN BẢN TIN CỦA ECO SHOP</div>
+                    <div class="input-group" id="mail-box">
+                        <input type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Gửi</button>
+                          </span>
+                    </div><!-- /input-group -->
+                    <div class="introduce-title">THEO DÕI CHÚNG TÔI</div>
+                    <!--<div class="social-link">-->
+                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+                    <!--</div>-->
+                    <div class="social-link">
+                        <ul class="social-icons">
+                            <li><a class="rss" data-original-title="rss" href="#"></a></li>
+                            <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                            <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                            <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                            <li><a class="linkedin" data-original-title="linkedin" href="#"></a></li>
+                            <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                            <li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+                            <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /#introduce-box -->
+
+
+        <div id="footer-menu-box">
+            <p class="text-center">Copyrights &#169; 2022 Eco Shop. All Rights Reserved. Design by Nguyen Quang Man</p>
+        </div><!-- /#footer-menu-box -->
+    </div>
+</footer>
+
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+
+<script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="js/theme-script.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initUniform();
+        Layout.initSliderRange();
+    });
+</script>
+</body>
+
+</html>

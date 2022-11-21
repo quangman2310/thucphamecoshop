@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutus.css"/>
+    <title>Eco Shop - VỀ CHÚNG TÔI</title>
+</head>
+<body class="green">
+<!-- HEADER -->
+<div id="header" class="header">
+
+    <!-- MAIN HEADER -->
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 logo">
+                <a href="index.html"><img alt="Eco Shop" src="images/logo.png"/></a>
+            </div>
+            <div class="col-xs-4 col-sm-12 col-md-5 col-lg-4 header-search-box">
+                <form class="form-inline">
+                    <div class="form-group input-serach">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 group-button-header">
+                <a title="So sánh" href="#" class="btn-compare">So sánh</a>
+                <a title="Sản phẩm yêu thích" href="#" class="btn-heart">Yêu thích</a>
+
+                <div class="btn-cart" id="cart-block">
+                    <a title="Đăng nhập" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MANIN HEADER -->
+    <div id="nav-top-menu" class="nav-top-menu">
+        <div class="container">
+            <div class="row">
+
+                <div id="main-menu" class="col-sm-12 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html"><span class="fa fa-home"></span> TRANG CHỦ</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle"
+                                           data-toggle="dropdown">SẢN PHẨM</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"><a href="product-vegetables.html">RAU</a></li>
+                                                    <li class="link_container"><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                                    <li class="link_container"><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                                    <li class="link_container"><a href="product-beans.html">ĐẬU</a></li>
+                                                    <li class="link_container"><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                                    <li class="link_container"><a href="product-spices.html">GIA VỊ</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--<li><a href="#">Promotion</a></li>-->
+                                    <li><a href="news.html">TIN TỨC</a></li>
+                                    <li><a href="policy-faq.html">CHÍNH SÁCH & CÂU HỎI THƯỜNG GẶP</a></li>
+                                    <li class="active"><a href="about-us.html">VỀ CHÚNG TÔI</a></li>
+                                    <li><a href="contact-us.html">LIÊN HỆ CHÚNG TÔI</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            <div id="shopping-cart-box-ontop">
+                <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+
+                <div class="shopping-cart-box-ontop-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+<!-- Home slideder-->
+<div id="home-slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 header-top-right">
+                <div class="homeslider">
+                    <ul id="contenhomeslider">
+                        <li><img alt="Funky roots" src="images/slide/img1.jpg" title="Funky roots"/></li>
+                        <li><img alt="Funky roots" src="images/slide/img2.jpg" title="Funky roots"/></li>
+                        <li><img alt="Funky roots" src="images/slide/img3.jpg" title="Funky roots"/></li>
+                        <li><img alt="Funky roots" src="images/slide/img4.jpg" title="Funky roots"/></li>
+                        <li><img alt="Funky roots" src="images/slide/img5.jpg" title="Funky roots"/></li>
+                        <li><img alt="Funky roots" src="images/slide/img6.jpg" title="Funky roots"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Home slideder-->
+
+
+
+<div class="content-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="content-container" style="padding-top: 25px">
+                    <p style="text-align: center; font-style: italic; color: #009966">Eco Shop là một công ty tư vấn chuyên nghiệp được thành lập để giải quyết các vấn đề xã hội và môi trường cho các doanh nghiệp trên khắp Đông Nam Á.</p>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="images/aboutus/history.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading"><span class="fa fa-history"></span> LỊCH SỬ</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Eco Shop được thành lập vào ngày 1/11/2022 trên cơ sở trang trại hữu cơ tọa lạc tại trang trại Phú Hài - TP. Phan Thiết. 
+                                    Tháng 1/2022, Eco Shop chính thức khai trương cửa hàng mới đầu tiên tại số 225 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="images/aboutus/vision.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading"><span class="fa fa-eye"></span> TẦM NHÌN</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Mục tiêu của chúng tôi là trở thành mô hình kinh doanh có thể được nhân rộng tại <strong>ở cấp địa phương</strong>để giúp tối đa hóa giá trị gia tăng của các sản phẩm được trồng và chế biến như <strong>hữu cơ</strong> và <strong>phương pháp canh tác địa phương</strong>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="images/aboutus/mission.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading"><span class="fa fa-hand-o-up"></span> NHIỆM VỤ</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Nhiệm vụ của chúng tôi là thiết lập và vận hành chuỗi cung ứng cho <strong>sản phẩm hữu cơ</strong> mà sản xuất tại Việt Nam. Bên cạnh đó, chúng tôi đang cố gắng phổ biến phương pháp canh tác hữu cơ tại địa phương và giảm dần đến không sử dụng bất kỳ loại hóa chất nào mà chúng tôi có thể <strong>protect</strong> và phát triển con người và môi trường.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="images/aboutus/corevalue.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading"> <span class="fa fa-heart"></span> GIÁ TRỊ CỐT LÕI</h4>
+                            </div>
+                            <div class="timeline-body">
+                                    <ol style="list-style: circle">
+                                        <li><strong>Trung thực</strong> - với bản thân và trong mọi mối quan hệ. Đây là điều kiện tiên quyết để tạo dựng niềm tin.</li>
+                                        <li><strong>Tình yêu</strong> - Bản thân, con người và Thiên nhiên.</li>
+                                        <li><strong>Trách nhiệm</strong> - với bản thân và xã hội. Chúng tôi luôn thực hiện đúng cam kết.</li>
+                                        <li><strong>Tiết kiệm </strong> - Tiêu dùng điều độ, tiết chế và tránh mọi hoạt động lãng phí.</li>
+                                    </ol>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="images/aboutus/b.philosophy.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading"><span class="fa fa-book"></span> TRIẾT LÝ KINH DOANH</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p style="font-style: italic">Kiến thức của con người mà đi lệch khỏi sự khôn ngoan của Đức Chúa Trời là vô ích. Vì Thượng đế là thiên nhiên, và thiên nhiên là Thượng đế. Hãy phục vụ Chúa bằng cách phục hồi thiên nhiên! ” - Masanobu Fukuoka</p>
+                                <p>Để giúp các doanh nghiệp tạo ra Lợi nhuận mà không làm tổn hại đến <strong>Con người</strong> và <strong>Hành tinh</strong> bằng cách cung cấp các giải pháp được <strong>thiết kế riêng</strong> giải pháp đó là <strong>khả thi, khả thi</strong> và cuối cùng <strong>bền vững</strong> trong dài hạn.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- POPUP LOGIN-REGISTER -->
+<!-- POPUP LOGIN-REGISTER -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">ĐĂNG NHẬP/ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Đăng nhập</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Đăng ký</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- LOGIN -->
+                            <div class="tab-pane active" id="Login">
+                                <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                      id="dangnhap_from" method="post">
+                                    <div class="form-group">
+                                        <label for="email_login" class="col-sm-3 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="email" class="input form-control" id="email_login"
+                                                   placeholder="Tên đăng nhập...."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass_login" class="col-sm-3 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="password" class="input form-control" id="pass_login"
+                                                   placeholder="Mật khẩu...."/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <button class="button" type="submit" id="button-confirm">Đăng nhập</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- REGISTER -->
+                            <div class="tab-pane fade" id="Registration">
+                                <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                      enctype="multipart/form-data" id="dangkytk_form register">
+                                    <div class="form-group">
+                                        <label for="frm_name" class="col-sm-4 control-label">Họ Tên</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" class="input form-control" id="frm_name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailtk" class="col-sm-4 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" class="input form-control" id="emailtk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass_tk" class="col-sm-4 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="pass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="repass_tk" class="col-sm-4 control-label">Nhập lại mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="repass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ngaysinh_tk" class="col-sm-4 control-label">Ngày sinh</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="gender_tk" class="col-sm-4 control-label">Giới tính</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                <option value="1">Nữ</option>
+                                                <option value="0">Nam</option>
+                                                <option value="0">Khác</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="diachi" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="dienthoai" class="col-sm-4 control-label">Số điện thoại</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="dienthoai" class="input form-control"
+                                                   id="dienthoai_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button class="button" type="submit">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="OR" class="hidden-xs">OR</div>
+                    </div>
+
+                    <!-- Facebook - Google account -->
+                    <div class="col-md-5">
+                        <div class="row text-center sign-with">
+                            <div class="social-header">Đăng nhập với</div>
+                            <div class="unit social-column">
+                                <div class="social-inner">
+                                    <div><a href=""><img src="images/fb-login-button-big.png" alt="login-facebook"></a>
+                                    </div>
+                                    <div><a href=""><img src="images/gg-login-button-big.png" alt="login-google"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EN LOGIN REGISTER-->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <!-- introduce-box -->
+        <div id="introduce-box" class="row">
+            <div class="col-md-3">
+                <div id="address-box">
+                    <a href="#"><img src="images/logo.png" alt="logo"/></a>
+
+                    <div id="address-list">
+                        <div class="tit-name">Địa chỉ:</div>
+                        <div class="tit-contain">255 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận
+                        </div>
+                        <div class="tit-name">Điện thoại:</div>
+                        <div class="tit-contain">(+84) 353.228.084</div>
+                        <div class="tit-name">Email:</div>
+                        <div class="tit-contain">ecoshop@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHĂM SÓC KHÁCH HÀNG</div>
+                        <ul id="introduce-support" class="introduce-list">
+                            <li> Thứ Hai - Thứ Sáu: 7:00 - 21:00</li>
+                            <li>Thứ Bảy: 7:00 - 19:00</li>
+                            <li><a href="policy-faq.html">Mua thế nào</a></li>
+                            <li><a href="policy-faq.html">Cách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHÍNH SÁCH</div>
+                        <ul id="introduce-Account" class="introduce-list">
+                            <li><a href="policy-faq.html">Chính sách bảo mật</a></li>
+                            <li><a href="policy-faq.html">Chính sách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Chính sách Trả hàng & Thay đổi</a></li>
+                            <li><a href="policy-faq.html">Điều khoản & điều kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="contact-box">
+                    <div class="introduce-title">ĐĂNG KÝ NHẬN BẢN TIN CỦA ECO SHOP</div>
+                    <div class="input-group" id="mail-box">
+                        <input type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Gửi</button>
+                          </span>
+                    </div><!-- /input-group -->
+                    <div class="introduce-title">THEO DÕI CHÚNG TÔI</div>
+                    <!--<div class="social-link">-->
+                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+                    <!--</div>-->
+                    <div class="social-link">
+                        <ul class="social-icons">
+                            <li><a class="rss" data-original-title="rss" href="#"></a></li>
+                            <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                            <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                            <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                            <li><a class="linkedin" data-original-title="linkedin" href="#"></a></li>
+                            <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                            <li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+                            <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /#introduce-box -->
+
+
+        <div id="footer-menu-box">
+            <p class="text-center">Copyrights &#169; 2022 Eco Shop. All Rights Reserved. Design by Nguyen Quang Man</p>
+        </div><!-- /#footer-menu-box -->
+    </div>
+</footer>
+
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+
+<script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="js/theme-script.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initUniform();
+        Layout.initSliderRange();
+    });
+</script>
+</body>
+
+</html>

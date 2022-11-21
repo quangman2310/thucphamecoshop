@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <title>Eco Shop - Dầu dừa có thể cứu não khỏi bệnh Alzheimer như thế nào</title>
+</head>
+<body class="green">
+<!-- HEADER -->
+<div class="container main-header">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 logo">
+            <a href="index.html"><img alt="Eco Shop" src="images/logo.png"/></a>
+        </div>
+        <div class="col-xs-4 col-sm-12 col-md-5 col-lg-4 header-search-box">
+            <form class="form-inline">
+                <div class="form-group input-serach">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 group-button-header">
+            <a title="So sánh" href="#" class="btn-compare">So sánh</a>
+            <a title="Sản phẩm yêu thích" href="#" class="btn-heart">Yêu thích</a>
+
+            <div class="btn-cart" id="cart-block">
+                <a title="Đăng nhập" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MANIN HEADER -->
+<div id="nav-top-menu" class="nav-top-menu">
+    <div class="container">
+        <div class="row">
+
+            <div id="main-menu" class="col-sm-12 main-menu">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="#">MENU</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html"><span class="fa fa-home"></span> TRANG CHỦ</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle"
+                                       data-toggle="dropdown">SẢN PHẨM</a>
+                                    <ul class="dropdown-menu container-fluid">
+                                        <li class="block-container">
+                                            <ul class="block">
+                                                <li class="link_container"><a href="product-vegetables.html">RAU</a></li>
+                                                <li class="link_container"><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                                <li class="link_container"><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                                <li class="link_container"><a href="product-beans.html">ĐẬU</a></li>
+                                                <li class="link_container"><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                                <li class="link_container"><a href="product-spices.html">GIA VỊ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--<li><a href="#">Promotion</a></li>-->
+                                <li  class="active"><a href="news.html">TIN TỨC</a></li>
+                                <li><a href="policy-faq.html">CHÍNH SÁCH & CÂU HỎI THƯỜNG GẶP</a></li>
+                                <li><a href="about-us.html">VỀ CHÚNG TÔI</a></li>
+                                <li><a href="contact-us.html">LIÊN HỆ CHÚNG TÔI</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- userinfo on top-->
+        <div id="form-search-opntop">
+        </div>
+        <!-- userinfo on top-->
+        <div id="user-info-opntop">
+        </div>
+        <!-- CART ICON ON MMENU -->
+        <div id="shopping-cart-box-ontop">
+            <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+
+            <div class="shopping-cart-box-ontop-content"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end header -->
+
+
+
+<div class="columns-container">
+<div class="container" id="columns">
+    <!-- row -->
+    <div class="row">
+        <!-- Left colunm -->
+        <div class="column col-xs-12 col-sm-3" id="left_column">
+            <!-- block category -->
+            <div class="block left-module">
+                <p class="title_block"><span class="fa fa-list"></span> Thể loại</p>
+
+                <div class="block_content">
+                    <!-- layered -->
+                    <div class="layered layered-category">
+                        <div class="layered-content">
+                            <ul class="tree-menu">
+                                <li class="active">
+                                    <span></span><a href="#">Sức khỏe</a>
+
+                                </li>
+                                <li><span></span><a href="#">Món ăn</a></li>
+                                <li><span></span><a href="#">Khoa học & Công nghệ</a></li>
+                                <li><span></span><a href="#">Nông nghiệp</a></li>
+                                <li><span></span><a href="#">Việc kinh doanh</a></li>
+                                <li><span></span><a href="#">Đời sống</a></li>
+                                <li><span></span><a href="#">Giải trí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ./layered -->
+                </div>
+            </div>
+            <!-- ./block category  -->
+            <!-- block video -->
+            <div class="block left-module">
+                <p class="title_block"><span class="fa fa-video-camera"></span>  VIDEOS</p>
+
+                <div class="block_content">
+                    <iframe width="255" height="300" src="https://www.youtube.com/embed/oFuC0URYKqU" frameborder="0"
+                            allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <!-- ./block video  -->
+
+            <!-- block image -->
+            <div class="block left-module">
+               <p class="title_block"><span class="fa fa-camera"></span>  Hình ảnh</p>
+                <div class="block_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="box-right">
+                                <ul class="product-list">
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                    src="images/news/news1_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news1.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product"style="border-radius: 15%"
+                                                    src="images/news/news2_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news2.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product"
+                                                    src="images/news/news3_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news3.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                    src="images/news/news4_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news4.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                    src="images/news/news5_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news5.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="left-block" style="padding: 5px 5px 5px 5px">
+                                            <a><img class="img-responsive" alt="product" style="border-radius: 15%"
+                                                    src="images/news/news6_300x300.jpg"/></a>
+                                            <div class="quick-view quick-view-2">
+                                                <a title="Zoom In" href="images/news/news6.jpg" class="search fancybox-button"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- ./block image  -->
+            </div>
+
+            <!-- Center colunm-->
+            <div class="center_column col-xs-12 col-sm-9" id="center_column">
+                <!-- page heading-->
+                <div class="page-heading">
+                    <h2>
+                        <span class="page-heading-title"><span class="fa fa-paperclip"></span> Dầu dừa có thể cứu não khỏi bệnh Alzheimer như thế nào  </span>
+                    </h2>
+                </div>
+
+                <div class="entry-meta-data" style="float: right; padding-top: 10px; padding-bottom: 10px">
+                                            <span class="author">
+                                            <i class="fa fa-user"></i>
+                                            bởi: <a href="#"> Sayer Ji</a></span>
+                    <span class="date"><i class="fa fa-calendar"></i> Ngày 03 tháng 09 </span>
+                </div>
+
+                <div style="padding-top: 50px">
+                    <p style="text-align: justify">Tất cả các lý do nữa để ăn mừng một nghiên cứu mới đầy hứa hẹn sẽ sớm được xuất bản trên Tạp chí Bệnh Alzheimer có tiêu đề, "Dầu dừa làm giảm tác động của Amyloid-β đối với tế bào thần kinh vỏ não trong ống nghiệm." Nghiên cứu hỗ trợ thực nghiệm mới cho một cơ thể tích lũy các báo cáo giai thoại rằng dầu dừa có thể làm giảm bớt và / hoặc hồi phục sự thiếu hụt nhận thức liên quan đến lão hóa và các bệnh thoái hóa thần kinh như bệnh Alzheimer và Parkinson.</p>
+                    <div style="text-align: center"><img src="images/news/news7.jpg" style="width: 60%;"></div>
+                    <p style="text-align: justify; padding-top: 10px">Các nhà nghiên cứu y tế từ Đại học Memorial of Newfoundland, St. John's, NL, Canada, đã thực hiện một nghiên cứu thử nghiệm để điều tra tác động của việc bổ sung dầu dừa trực tiếp lên các tế bào thần kinh vỏ não được điều trị bằng peptide amyloid-β (Aβ) trong ống nghiệm. Aβ peptide là thành phần chính của một số chất lắng đọng được tìm thấy trong não của bệnh nhân mắc bệnh Alzheimer được cho là nguyên nhân gây ra bệnh.</p>
+                    <p style="text-align: justify">Các nhà nghiên cứu lưu ý rằng một thử nghiệm lâm sàng gần đây đã báo cáo những cải thiện đáng kể ở bệnh nhân mắc bệnh Alzheimer sau 45 và 90 ngày điều trị với chất béo trung tính chuỗi trung bình từ dầu dừa. Họ chỉ ra rằng thử nghiệm này đã dẫn đến việc tiếp thị caprylidene 'thực phẩm y tế' được FDA chấp thuận (tên thương mại là Axona), nhưng công chúng đã thể hiện sự quan tâm nhiều hơn đến bản thân dầu dừa như một liệu pháp tiềm năng, do khả năng chi trả cao hơn nhiều và khả dụng.</p>
+                    <p style="text-align: justify">Các nhà nghiên cứu đã tìm cách kiểm tra giả thuyết rằng dầu dừa có lợi cho tình trạng thoái hóa thần kinh bằng cách sử dụng một mô hình tế bào. Tế bào thần kinh của chuột sống được tiếp xúc với nhiều sự kết hợp khác nhau của peptit Aβ và dầu dừa, kết quả là peptit Aβ làm giảm khả năng sống sót của tế bào thần kinh và dừa được bảo vệ chống lại sự giảm thời gian sống sót do Aβ gây ra. Các nhà nghiên cứu lưu ý rằng dừa được xử lý Aβ các tế bào thần kinh được nuôi cấy có vẻ “khỏe mạnh hơn” và dầu dừa “giải cứu” các tế bào thần kinh được xử lý Aβ khỏi tổn thương ty thể do độc tính của chúng gây ra. Các nhà nghiên cứu đã quan sát thấy dầu dừa ngăn chặn những thay đổi do Aβ gây ra trong kích thước và tuần hoàn của ty thể. Những phát hiện này có ý nghĩa to lớn, vì chức năng của ty thể thường bị tổn hại trong não của những bệnh nhân mắc bệnh Alzheimer.</p>
+                    <p style="text-align: justify">Theo các nhà nghiên cứu, “Cơ sở lý luận của việc sử dụng dầu dừa như một liệu pháp điều trị AD [Bệnh Alzheimer] tiềm năng có liên quan đến khả năng nó có thể được chuyển hóa thành các thể xeton để cung cấp nguồn năng lượng thay thế cho các tế bào thần kinh và do đó bù đắp cho rối loạn chức năng ty thể. . ” Các nhà nghiên cứu đề xuất rằng các thể xeton được hình thành như một sản phẩm phụ của quá trình chuyển hóa dầu dừa có thể bù đắp sự suy giảm chức năng ty thể do Aβ gây ra và do đó chuyển hóa năng lượng. Xem xét rằng chất béo trung tính chuỗi trung bình được tìm thấy trong dừa được gọi là axit caprylic không vượt qua hàng rào máu não và gần đây đã được phát hiện là có tác dụng chống co giật, ngoài ra, dầu dừa còn có tác dụng bảo vệ thần kinh.</p>
+                    <p style="text-align: justify">Các nhà nghiên cứu kết luận, "Kết quả của nghiên cứu thử nghiệm này cung cấp cơ sở để điều tra thêm về tác động của dầu dừa, hoặc các thành phần của nó, đối với sự tồn tại của tế bào thần kinh, tập trung vào các cơ chế có thể liên quan."</p>
+                    <p style="text-align: justify">Rõ ràng, một trong những cách mà dầu dừa có thể 'giải cứu' bộ não của bệnh nhân Alzheimer là giải quyết tình trạng rối loạn chuyển hóa trong não liên quan đến tình trạng bệnh, hay còn gọi là "bệnh tiểu đường loại 3". Khi não già đi, nó ngày càng trở nên đề kháng với insulin, và do đó không có khả năng sử dụng glucose một cách hiệu quả để đáp ứng nhu cầu năng lượng đáng kể của nó - do đó được gọi là “bệnh tiểu đường loại 3”. Rất may, thiên nhiên đã tạo ra một nguồn nhiên liệu thay thế cho não độc lập với việc sử dụng glucose và hệ thống truyền tín hiệu insulin, cụ thể là việc sử dụng các thể xeton. Dầu dừa cung cấp chất nền để sản xuất ngay các thể xeton này, cho phép sản xuất một lượng đáng kể chỉ trong vòng vài phút sau khi uống.</p>
+                </div>
+
+
+
+            </div>
+            <!-- ./ Center colunm -->
+        </div>
+        <!-- ./row-->
+    </div>
+</div>
+
+<!-- POPUP LOGIN-REGISTER -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">ĐĂNG NHẬP/ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Đăng nhập</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Đăng ký</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- LOGIN -->
+                            <div class="tab-pane active" id="Login">
+                                <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                      id="dangnhap_from" method="post">
+                                    <div class="form-group">
+                                        <label for="email_login" class="col-sm-3 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="email" class="input form-control" id="email_login"
+                                                   placeholder="Tên đăng nhập...."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass_login" class="col-sm-3 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="password" class="input form-control" id="pass_login"
+                                                   placeholder="Mật khẩu...."/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <button class="button" type="submit" id="button-confirm">Đăng nhập</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- REGISTER -->
+                            <div class="tab-pane fade" id="Registration">
+                                <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                      enctype="multipart/form-data" id="dangkytk_form register">
+                                    <div class="form-group">
+                                        <label for="frm_name" class="col-sm-4 control-label">Họ Tên</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" class="input form-control" id="frm_name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailtk" class="col-sm-4 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" class="input form-control" id="emailtk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass_tk" class="col-sm-4 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="pass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="repass_tk" class="col-sm-4 control-label">Nhập lại mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="repass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ngaysinh_tk" class="col-sm-4 control-label">Ngày sinh</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="gender_tk" class="col-sm-4 control-label">Giới tính</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                <option value="1">Nữ</option>
+                                                <option value="0">Nam</option>
+                                                <option value="0">Khác</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="diachi" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="dienthoai" class="col-sm-4 control-label">Số điện thoại</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="dienthoai" class="input form-control"
+                                                   id="dienthoai_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button class="button" type="submit">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="OR" class="hidden-xs">OR</div>
+                    </div>
+
+                    <!-- Facebook - Google account -->
+                    <div class="col-md-5">
+                        <div class="row text-center sign-with">
+                            <div class="social-header">Đăng nhập với</div>
+                            <div class="unit social-column">
+                                <div class="social-inner">
+                                    <div><a href=""><img src="images/fb-login-button-big.png" alt="login-facebook"></a>
+                                    </div>
+                                    <div><a href=""><img src="images/gg-login-button-big.png" alt="login-google"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EN LOGIN REGISTER-->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <!-- introduce-box -->
+        <div id="introduce-box" class="row">
+            <div class="col-md-3">
+                <div id="address-box">
+                    <a href="#"><img src="images/logo.png" alt="logo"/></a>
+
+                    <div id="address-list">
+                        <div class="tit-name">Địa chỉ:</div>
+                        <div class="tit-contain">255 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận
+                        </div>
+                        <div class="tit-name">Điện thoại:</div>
+                        <div class="tit-contain">(+84) 353.228.084</div>
+                        <div class="tit-name">Email:</div>
+                        <div class="tit-contain">ecoshop@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHĂM SÓC KHÁCH HÀNG</div>
+                        <ul id="introduce-support" class="introduce-list">
+                            <li> Thứ Hai - Thứ Sáu: 7:00 - 21:00</li>
+                            <li>Thứ Bảy: 7:00 - 19:00</li>
+                            <li><a href="policy-faq.html">Mua thế nào</a></li>
+                            <li><a href="policy-faq.html">Cách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHÍNH SÁCH</div>
+                        <ul id="introduce-Account" class="introduce-list">
+                            <li><a href="policy-faq.html">Chính sách bảo mật</a></li>
+                            <li><a href="policy-faq.html">Chính sách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Chính sách Trả hàng & Thay đổi</a></li>
+                            <li><a href="policy-faq.html">Điều khoản & điều kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="contact-box">
+                    <div class="introduce-title">ĐĂNG KÝ NHẬN BẢN TIN CỦA ECO SHOP</div>
+                    <div class="input-group" id="mail-box">
+                        <input type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Gửi</button>
+                          </span>
+                    </div><!-- /input-group -->
+                    <div class="introduce-title">THEO DÕI CHÚNG TÔI</div>
+                    <!--<div class="social-link">-->
+                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+                    <!--</div>-->
+                    <div class="social-link">
+                        <ul class="social-icons">
+                            <li><a class="rss" data-original-title="rss" href="#"></a></li>
+                            <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                            <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                            <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                            <li><a class="linkedin" data-original-title="linkedin" href="#"></a></li>
+                            <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                            <li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+                            <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /#introduce-box -->
+
+
+        <div id="footer-menu-box">
+            <p class="text-center">Copyrights &#169; 2022 Eco Shop. All Rights Reserved. Design by Nguyen Quang Man</p>
+        </div><!-- /#footer-menu-box -->
+    </div>
+</footer>
+
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+
+<script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="js/theme-script.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initUniform();
+        Layout.initSliderRange();
+    });
+</script>
+</body>
+
+</html>

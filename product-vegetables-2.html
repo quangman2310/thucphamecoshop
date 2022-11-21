@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.bxslider/jquery.bxslider.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/owl.carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fancyBox/source/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/green.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style_frm_dkdn.css"/>
+    <link rel="stylesheet" href="css/switcher.css">
+    <title>Eco Shop - RAU</title>
+</head>
+<body class="green">
+<!-- HEADER -->
+<div id="header" class="header">
+
+    <!-- MAIN HEADER -->
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 logo">
+                <a href="index.html"><img alt="Eco Shop" src="images/logo.png"/></a>
+            </div>
+            <div class="col-xs-4 col-sm-12 col-md-5 col-lg-4 header-search-box">
+                <form class="form-inline">
+                    <div class="form-group input-serach">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <button type="submit" class="pull-right btn-search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 group-button-header">
+                <a title="So sánh" href="#" class="btn-compare">So sánh</a>
+                <a title="Sản phẩm yêu thích" href="#" class="btn-heart">Yêu thích</a>
+
+                <div class="btn-cart" id="cart-block">
+                    <a title="Đăng nhập" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MANIN HEADER -->
+    <div id="nav-top-menu" class="nav-top-menu">
+        <div class="container">
+            <div class="row">
+
+                <div id="main-menu" class="col-sm-12 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html"><span class="fa fa-home"></span> TRANG CHỦ</a></li>
+                                    <li class="dropdown active">
+                                        <a href="#" class="dropdown-toggle"
+                                           data-toggle="dropdown">SẢN PHẨM</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"><a href="product-vegetables.html">RAU</a></li>
+                                                    <li class="link_container"><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                                    <li class="link_container"><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                                    <li class="link_container"><a href="product-beans.html">ĐẬU</a></li>
+                                                    <li class="link_container"><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                                    <li class="link_container"><a href="product-spices.html">GIA VỊ</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!--<li><a href="#">Promotion</a></li>-->
+                                    <li><a href="news.html">TIN TỨC</a></li>
+                                    <li><a href="policy-faq.html">CHÍNH SÁCH & CÂU HỎI THƯỜNG GẶP</a></li>
+                                    <li><a href="about-us.html">VỀ CHÚNG TÔI</a></li>
+                                    <li><a href="contact-us.html">LIÊN HỆ CHÚNG TÔI</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            <div id="shopping-cart-box-ontop">
+                <i class="fa fa-user" data-toggle="modal" data-target="#myModal"></i>
+
+                <div class="shopping-cart-box-ontop-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+
+<div class="columns-container">
+    <div class="container" id="columns">
+        <!-- row -->
+        <div class="row">
+            <div class="column col-xs-12 col-sm-3" id="left_column">
+                <!-- block category -->
+                <div class="block left-module">
+                    <p class="title_block"><span class="fa fa-pagelines"></span> SẢN PHẨM</p>
+
+                    <div class="block_content">
+                        <!-- layered -->
+                        <div class="layered layered-category">
+                            <div class="layered-content">
+                                <ul class="tree-menu">
+                                    <li class="active">
+                                        <span></span><a href="product-vegetables.html">RAU</a>
+                                    </li>
+                                    <li><span></span><a href="product-fruits.html">TRÁI CÂY</a></li>
+                                    <li><span></span><a href="product-cereals.html">NGŨ CỐC</a></li>
+                                    <li><span></span><a href="product-beans.html">ĐẬU</a></li>
+                                    <li><span></span><a href="product-nuts-seeds.html">HẠT QUẢ HẠCH</a></li>
+                                    <li><span></span><a href="product-spices.html">GIA VỊ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ./layered -->
+                    </div>
+                </div>
+                <!-- ./block category  -->
+                <!-- block best sellers -->
+                <!--<div class="block left-module">-->
+                <!--<p class="title_block">VIDEO</p>-->
+
+                <!--<div class="block_content">-->
+                <!--<iframe width="255" height="300" src="https://www.youtube.com/embed/oFuC0URYKqU" frameborder="0"-->
+                <!--allowfullscreen=""></iframe>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!-- ./block best sellers  -->
+
+                <!-- left silide -->
+                <!--????????????????-->
+                <!--./left silde-->
+            </div>
+            <!-- ./left colunm -->
+            <!-- Center colunm-->
+            <div class="center_column col-xs-12 col-sm-9" id="center_column">
+                <!-- page heading-->
+                <h2 class="page-heading">
+                    <span class="page-heading-title">RAU</span>
+                </h2>
+                <!-- ../page heading-->
+                <!-- Product -->
+                <div id="product">
+                    <!-- box product -->
+                    <div class="category-featured Vegetables">
+                        <div class="product-featured clearfix">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="box-right">
+                                        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                                        <ul class="product-list">
+
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/malabarspinach_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/malabar%20spinach_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Rau mồng tơi- 1kg"
+                                                           data-price="20000" data-image="vegetables/malabarspinach_300x300.jpg" data-product-code="MS109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Rau mồng tơi - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 20,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/radish_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/radish_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Củ cải trắng - 1kg"
+                                                           data-price="55000" data-image="vegetables/radish_300x300.jpg" data-product-code="RD109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Củ cải trắng - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 55,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/romaine_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/romaine_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Xà lách Romaine- 1kg"
+                                                           data-price="85000" data-image="vegetables/romaine_300x300.jpg" data-product-code="RM109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Xà lách Romaine - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 85,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/mustardspinach_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/mustardspinach_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Cải bó xôi mù tạt - 1kg"
+                                                           data-price="35000" data-image="vegetables/mustardspinach_300x300.jpg" data-product-code="MS109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Cải bó xôi mù tạt - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 35,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/taro_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/taro_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Khoai môn - 1kg"
+                                                           data-price="25000" data-image="vegetables/taro_300x300.jpg" data-product-code="TR109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Khoai môn - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 25,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/tomato_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/tomato_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Cà chua - 1kg"
+                                                           data-price="55000" data-image="vegetables/tomato_300x300.jpg" data-product-code="TT109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Cà chua - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 55,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/watercress_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/watercress_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Cải xoong - 1kg"
+                                                           data-price="25000" data-image="vegetables/watercress_300x300.jpg" data-product-code="WC109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Cải xoong - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 25,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/sweetpotato_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/sweetpotato_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Khoai lang - 1kg"
+                                                           data-price="22000" data-image="vegetables/sweetpotato_300x300.jpg" data-product-code="SWP109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Khoai lang - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 22,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-4 product-item" style="width: 280px;">
+                                                <div class="left-block">
+                                                    <a><img class="img-responsive" alt="product"
+                                                            src="images/product-detail/vegetables/greenpumpkin_300x300.jpg"/></a>
+
+                                                    <div class="quick-view">
+                                                        <a title="Thêm vào mục yêu thích" class="heart" href="#"></a>
+                                                        <a title="Thêm vào mục so sánh" class="compare" href="#"></a>
+                                                        <a title="Xem để lướt qua" href="images/product-detail/vegetables/greenpumpkin_600x600.jpg" class="search fancybox-button"></a>
+                                                    </div>
+                                                    <div class="add-to-cart">
+                                                        <a class="add-item-to-cart" title="Thêm vào giỏ hàng" href="#" data-name="Bí xanh - 1kg"
+                                                           data-price="45000" data-image="vegetables/greenpumpkin_300x300.jpg" data-product-code="PC109">Thêm vào giỏ hàng</a>
+                                                    </div>
+                                                </div>
+                                                <div class="right-block">
+                                                    <h5 class="product-name"><a href="#">Bí xanh - 1kg</a></h5>
+
+                                                    <div class="content_price">
+                                                        <span class="price product-price"><span style="color: black">Giá:</span> 45,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./box product -->
+                </div>
+                <!-- Product -->
+                <div class="sortPagiBar">
+                    <div class="bottom-pagination">
+                        <nav>
+                            <ul class="pagination">
+                                <li><a href="product-vegetables.html">1</a></li>
+                                <li class="active"><a href="product-vegetables-2.html">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Tiếp theo">
+                                        <span aria-hidden="true">Tiếp theo &raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="show-product-item">
+                        <select name="">
+                            <option value="">Hiển thị 9</option>
+                            <option value="">Hiển thị 18</option>
+                            <option value="">Hiển thị 27</option>
+                            <option value="">Hiển thị 36</option>
+                        </select>
+                    </div>
+                    <div class="sort-product">
+                        <select>
+                            <option value="">Tên sản phẩm</option>
+                            <option value="">Giá</option>
+                        </select>
+
+                        <div class="sort-product-icon">
+                            <i class="fa fa-sort-alpha-asc"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./ Center colunm -->
+        </div>
+        <!-- ./row-->
+    </div>
+</div>
+
+<!-- POPUP LOGIN-REGISTER -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">ĐĂNG NHẬP/ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Đăng nhập</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Đăng ký</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- LOGIN -->
+                            <div class="tab-pane active" id="Login">
+                                <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                      id="dangnhap_from" method="post">
+                                    <div class="form-group">
+                                        <label for="email_login" class="col-sm-3 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="email" class="input form-control" id="email_login"
+                                                   placeholder="Tên đăng nhập...."/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass_login" class="col-sm-3 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-9">
+                                            <input type="password" class="input form-control" id="pass_login"
+                                                   placeholder="Mật khẩu...."/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <button class="button" type="submit" id="button-confirm">Đăng nhập</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- REGISTER -->
+                            <div class="tab-pane fade" id="Registration">
+                                <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                      enctype="multipart/form-data" id="dangkytk_form register">
+                                    <div class="form-group">
+                                        <label for="frm_name" class="col-sm-4 control-label">Họ Tên</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" class="input form-control" id="frm_name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailtk" class="col-sm-4 control-label">Tên đăng nhập</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="email" class="input form-control" id="emailtk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass_tk" class="col-sm-4 control-label">Mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="pass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="repass_tk" class="col-sm-4 control-label">Nhập lại mật khẩu</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="password" class="input form-control" id="repass_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="ngaysinh_tk" class="col-sm-4 control-label">Ngày sinh</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="date" class="input form-control" id="ngaysinh_tk" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="gender_tk" class="col-sm-4 control-label">Giới tính</label>
+
+                                        <div class="col-sm-8">
+                                            <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                <option value="1">Nữ</option>
+                                                <option value="0">Nam</option>
+                                                <option value="0">Khác</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="diachi" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="diachi" class="input form-control" id="diachi_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="dienthoai" class="col-sm-4 control-label">Số điện thoại</label>
+
+                                        <div class="col-sm-8">
+                                            <input type="text" name="dienthoai" class="input form-control"
+                                                   id="dienthoai_dk"/>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <button class="button" type="submit">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="OR" class="hidden-xs">OR</div>
+                    </div>
+
+                    <!-- Facebook - Google account -->
+                    <div class="col-md-5">
+                        <div class="row text-center sign-with">
+                            <div class="social-header">Đăng nhập với</div>
+                            <div class="unit social-column">
+                                <div class="social-inner">
+                                    <div><a href=""><img src="images/fb-login-button-big.png" alt="login-facebook"></a>
+                                    </div>
+                                    <div><a href=""><img src="images/gg-login-button-big.png" alt="login-google"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--EN LOGIN REGISTER-->
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div class="demo_changer" id="demo_changer">
+    <div class="demo-icon fa fa-shopping-cart">
+        <span class="notify notify-left" id="count-cart">2</span>
+    </div>
+    <div class="form_holder">
+        <div class="cart-block">
+            <div class="cart-block-content">
+                <div class="cart-block-list">
+                    <div class="shop_cart">
+                        <table class="shop_table">
+                            <tbody id="show-cart">
+                            <!--/////////////////////////////////-->
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="toal-cart">
+                    <span>Tổng cộng</span>
+                    <span class="toal-price pull-right" id="total_price">54,000đ</span>
+                </div>
+                <div class="cart-buttons">
+                    <a href="shoping-cart.html" class="btn-check-out">Thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <!-- introduce-box -->
+        <div id="introduce-box" class="row">
+            <div class="col-md-3">
+                <div id="address-box">
+                    <a href="#"><img src="images/logo.png" alt="logo"/></a>
+
+                    <div id="address-list">
+                        <div class="tit-name">Địa chỉ:</div>
+                        <div class="tit-contain">255 Nguyễn Thông, Phường Phú Hài, TP. Phan Thiết, Tỉnh Bình Thuận
+                        </div>
+                        <div class="tit-name">Điện thoại:</div>
+                        <div class="tit-contain">(+84) 353.228.084</div>
+                        <div class="tit-name">Email:</div>
+                        <div class="tit-contain">ecoshop@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHĂM SÓC KHÁCH HÀNG</div>
+                        <ul id="introduce-support" class="introduce-list">
+                            <li> Thứ Hai - Thứ Sáu: 7:00 - 21:00</li>
+                            <li>Thứ Bảy: 7:00 - 19:00</li>
+                            <li><a href="policy-faq.html">Mua thế nào</a></li>
+                            <li><a href="policy-faq.html">Cách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="introduce-title">CHÍNH SÁCH</div>
+                        <ul id="introduce-Account" class="introduce-list">
+                            <li><a href="policy-faq.html">Chính sách bảo mật</a></li>
+                            <li><a href="policy-faq.html">Chính sách thanh toán</a></li>
+                            <li><a href="policy-faq.html">Chính sách Trả hàng & Thay đổi</a></li>
+                            <li><a href="policy-faq.html">Điều khoản & điều kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="contact-box">
+                    <div class="introduce-title">ĐĂNG KÝ NHẬN BẢN TIN CỦA ECO SHOP</div>
+                    <div class="input-group" id="mail-box">
+                        <input type="text" placeholder="Nhập địa chỉ email của bạn..."/>
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Gửi</button>
+                          </span>
+                    </div><!-- /input-group -->
+                    <div class="introduce-title">THEO DÕI CHÚNG TÔI</div>
+                    <!--<div class="social-link">-->
+                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-google-plus"></i></a>-->
+                    <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+                    <!--</div>-->
+                    <div class="social-link">
+                        <ul class="social-icons">
+                            <li><a class="rss" data-original-title="rss" href="#"></a></li>
+                            <li><a class="facebook" data-original-title="facebook" href="#"></a></li>
+                            <li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+                            <li><a class="googleplus" data-original-title="googleplus" href="#"></a></li>
+                            <li><a class="linkedin" data-original-title="linkedin" href="#"></a></li>
+                            <li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+                            <li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+                            <li><a class="skype" data-original-title="skype" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /#introduce-box -->
+
+
+        <div id="footer-menu-box">
+            <p class="text-center">Copyrights &#169; 2022 Eco Shop. All Rights Reserved. Design by Nguyen Quang Man</p>
+        </div><!-- /#footer-menu-box -->
+    </div>
+</footer>
+
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+
+<script type="text/javascript" src="lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="lib/fancyBox/source/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="lib/owl.carousel/owl.carousel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="js/theme-script.js"></script>
+<script type="text/javascript" src="js/shoppingCart.js"></script>
+
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initImageZoom();
+        Layout.initTouchspin();
+        Layout.initUniform();
+        Layout.initSliderRange();
+    });
+</script>
+</body>
+
+</html>
